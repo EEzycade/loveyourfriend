@@ -1,0 +1,34 @@
+:root {
+    --primary-color: rgb(18, 108, 144);
+    --secondary-color: rgb(200, 44, 22);
+    --tertiary-color: #39a6b2;
+}
+
+* {
+    margin: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+}
+
+
+#nav-bar {
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#nav-bar a {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+#nav-bar a:hover {
+    color: var(--secondary-color);
+}
