@@ -1,34 +1,167 @@
 :root {
-    --primary-color: rgb(18, 108, 144);
-    --secondary-color: rgb(200, 44, 22);
-    --tertiary-color: #39a6b2;
+    --primary-color: #0D96BE;
+    --secondary-color: #EC4D23;
+    --tertiary-color: #FFDF06;
 }
 
 * {
     margin: 0;
 }
 
-header {
-    background-color: var(--primary-color);
+body {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+/* styling for header */
+
+#logo {
+    padding: 1em;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
 #nav-bar {
     padding: 1em;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 #nav-bar a {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 1.2em;
     text-decoration: none;
-    color: whitesmoke;
+    color: var(--primary-color);
     font-weight: bold;
     font-size: 1.4em;
 }
 
 #nav-bar a:hover {
     color: var(--secondary-color);
+}
+
+#nav-donate {
+    background-color: var(--secondary-color);
+    color: white !important;
+    border-radius: .5em;
+}
+
+#nav-donate:hover {
+    background-color: var(--primary-color);
+}
+
+/* styling for homepage */
+
+#mission {
+    display: flex;
+    
+}
+
+#mission img {
+    width: 65%;
+}
+
+#mission div {
+    display: flex;
+    align-items: center;
+    width: 35%;
+    background-color: var(--secondary-color);
+}
+
+#mission p {
+    font-size: 1.7em;
+    color: whitesmoke;
+    padding: 1em;
+}
+
+.section-heading {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 2em;
+    padding: 1em;
+}
+
+.email-input {
+    border: 1px solid rgba(0, 0, 0, .4);
+    border-radius: .5em;
+    padding: 1em;
+    max-width: 20em;
+    margin: 1em;
+}
+
+.subscribe-btn {
+    border: none;
+    padding: .8em;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    color: white;
+    margin: 1em;
+}
+
+#action-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2em;
+    justify-content: space-between;
+}
+
+.action-item {
+    background-color: white;
+    max-width: 30em;
+    min-height: 20em;
+    margin: auto;
+    box-shadow: 1em;
+}
+
+.item-header {
+    background-color: var(--secondary-color);
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    padding: .5em;
+    box-shadow: 0 0 .2em rgba(0, 0, 0, .4);
+}
+
+.item-text {
+    padding: 1em;
+    font-size: 1.3em;
+    text-align: left;
+}
+
+.donate-link-container {
+    display: flex;
+    justify-content: center;
+}
+
+#donate-link {
+    /* display: inline-block; */
+    padding: 1em;
+    text-decoration: none;
+    color: white;
+    background-color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.4em;
+    margin: 1em;
+}
+
+.icon {
+    color: var(--secondary-color);
+}
+
+
+
+/* styling for footer */
+
+footer {
+    background-color: var(--primary-color);
+    padding: 1em;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
 }
