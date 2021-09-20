@@ -2,6 +2,7 @@
     --primary-color: #0D96BE;
     --secondary-color: #EC4D23;
     --tertiary-color: #FFDF06;
+    --btn-hover-color: #106782;
 }
 
 * {
@@ -56,25 +57,24 @@ header {
 
 /* styling for homepage */
 
-#mission {
-    display: flex;
-    
-}
-
-#mission img {
-    width: 65%;
-}
-
-#mission div {
-    display: flex;
-    align-items: center;
-    width: 35%;
+.hero {
+    margin: 0;
     background-color: var(--secondary-color);
+}
+
+.hero img {
+    width: 100%;
+}
+
+#mission {
+    background-color: var(--secondary-color);
+    text-align: center;
+    width: 100%;
 }
 
 #mission p {
     font-size: 1.7em;
-    color: whitesmoke;
+    color: white;
     padding: 1em;
 }
 
@@ -85,37 +85,21 @@ header {
     padding: 1em;
 }
 
-.email-input {
-    border: 1px solid rgba(0, 0, 0, .4);
-    border-radius: .5em;
-    padding: 1em;
-    max-width: 20em;
-    margin: 1em;
-}
-
-.subscribe-btn {
-    border: none;
-    padding: .8em;
-    font-size: 1em;
-    font-weight: bold;
-    background-color: var(--primary-color);
-    color: white;
-    margin: 1em;
-}
-
 #action-container {
     display: flex;
     flex-wrap: wrap;
     margin-top: 2em;
-    justify-content: space-between;
 }
 
 .action-item {
-    background-color: white;
-    max-width: 30em;
-    min-height: 20em;
+    background-color: var(--primary-color);
+    max-width: 22em;
+    min-height: 30em;
     margin: auto;
-    box-shadow: 1em;
+}
+
+.action-img {
+    box-shadow: 0 0 .5em rgba(0, 0, 0, .4);
 }
 
 .item-header {
@@ -128,9 +112,33 @@ header {
 }
 
 .item-text {
+    color: white;
     padding: 1em;
     font-size: 1.3em;
     text-align: left;
+}
+
+.email {
+    border: .5px solid rgba(0, 0, 0, .5);
+    border-radius: .5em;
+    padding: 1em;
+    min-width: 20em;
+    margin: 1em;
+}
+
+.subscribe-btn {
+    border: none;
+    padding: .8em;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    color: white;
+    margin: 1em;
+    border-radius: .5em;
+}
+
+.subscribe-btn:hover {
+    background-color: var(--btn-hover-color);
 }
 
 .donate-link-container {
@@ -139,18 +147,29 @@ header {
 }
 
 #donate-link {
-    /* display: inline-block; */
     padding: 1em;
     text-decoration: none;
     color: white;
     background-color: var(--primary-color);
     font-weight: bold;
     font-size: 1.4em;
+    border-radius: .5em;
     margin: 1em;
+}
+
+#donate-link:hover {
+    background-color: var(--btn-hover-color);
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
 }
 
 .icon {
     color: var(--secondary-color);
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 
