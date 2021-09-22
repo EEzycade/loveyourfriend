@@ -16,4 +16,4 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(require('./routes'));
 
-app.listen(3001, () => console.log('Now listening on PORT 3001'));
+app.listen(PORT, () => console.log(`Now listening on ${PORT}`));
