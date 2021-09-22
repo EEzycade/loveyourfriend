@@ -35,6 +35,24 @@
 
 <section id="action-container">
 
+    <div id="donate" class="action-item">
+        <p class="item-header">Donate</p>
+
+        <p class="item-text">
+            By donating to Love, Your Friend, you are helping to host activities, run the website,
+            sponsor special projects and more. Thank you very much for your generosity, Friend.
+        </p>
+
+        <div class="donate-link-container item-action">
+            <a id="donate-link"
+                href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=73MUYTNWDKSFN&amp;source=url"
+                target="_blank">Donate
+                Now!
+            </a>
+        </div>
+
+    </div>
+
     <div id="subscribe" class="action-item">
         <p class="item-header">Sign Up</p>
 
@@ -42,17 +60,16 @@
             Stay in the loop about upcoming activities by subscribing to our newsletter.
         </p>
 
-        <div id="mc_embed_signup" class="item-action">
+        <div id="form-div" class="item-action">
             <form
                 action="https://loveyourfriend.us9.list-manage.com/subscribe/post?u=27a50a62f8417dbef79800aca&amp;id=c1d848c3fb"
                 method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
                 target="_blank" novalidate>
-                <div id="mc_embed_signup_scroll">
+                <div id="input-div">
 
-                    <div class="mc-field-group">
-                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"
-                            placeholder="Enter your email address">
-                    </div>
+                    <input type="email" value="" name="EMAIL" class="required email-input email-component"
+                        id="mce-EMAIL" placeholder="Enter your email address">
+
 
                     <div id="mce-responses" class="clear">
                         <div class="response" id="mce-error-response" style="display:none"></div>
@@ -65,7 +82,7 @@
                     </div>
                     <div class="clear">
                         <input type="submit" value="Subscribe to our newsletter" name="subscribe"
-                            id="mc-embedded-subscribe" class="button subscribe-btn">
+                            id="mc-embedded-subscribe" class="subscribe-btn email-component">
                     </div>
                 </div>
             </form>
@@ -73,22 +90,7 @@
 
     </div>
 
-    <div id="donate" class="action-item">
-        <p class="item-header">Donate</p>
 
-        <p class="item-text">
-            By donating to Love, Your Friend, you are helping to host activities, run the website,
-            sponsor special projects and more. Thank you very much for your generosity, Friend.
-        </p>
-
-        <div class="donate-link-container item-action">
-            <a id="donate-link"
-                href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=73MUYTNWDKSFN&amp;source=url" target="_blank">Donate
-                Now!
-            </a>
-        </div>
-
-    </div>
 
     <div id="follow" class="action-item">
 
@@ -98,18 +100,24 @@
             Follow us on social media to stay informed about Love, Your Friend.
         </p>
 
-        <div class="follow-links item-action">
-            <div class="icon">
-                <a href="https://www.facebook.com/Love-your-Friend-142530812501655/" target="_blank">
-                    <i class="fab fa-facebook-square fa-4x"></i>
-                </a>
+        <div class="item-action">
+
+            <div class="follow-links">
+                <div class="icon">
+                    <a href="https://www.facebook.com/Love-your-Friend-142530812501655/" target="_blank">
+                        <i class="fab fa-facebook-square fa-3x"></i>
+                    </a>
+                    <p class="icon-name">Facebook</p>
+                </div>
+
+                <div class="icon">
+                    <a href="https://www.instagram.com/loveyourfriendaz/" target="_blank">
+                        <i class="fab fa-instagram-square fa-3x"></i>
+                    </a>
+                    <p class="icon-name">Instagram</p>
+                </div>
             </div>
 
-            <div class="icon">
-                <a href="https://www.instagram.com/loveyourfriendaz/" target="_blank">
-                    <i class="fab fa-instagram-square fa-4x"></i>
-                </a>
-            </div>
         </div>
 
     </div>
@@ -120,8 +128,10 @@
 
         <p class="item-text">
             If you have a loved one who you think would benefit from LYF, share! We want to grow Love, Your Friend to
-            reach more of our friends. Post on social media or simply tell your friends and neighbors about us. 
+            reach more of our friends. Post on social media or simply tell your friends and neighbors about us.
         </p>
+
+        <div class="item-action"></div>
 
     </div>
 
